@@ -60,19 +60,12 @@ export default class UsuariosController {
         return {'mensaje':'Elimino correctamente','estado':200}
     }
 
-
     //MOSTRAR UN USUARIO
-    public async getListarUsuario({request}: HttpContextContract) {
+    public async getBuscarId({request}: HttpContextContract) {
         const codigoUsuario = request.param('id')
-        const user = await Usuario.query().where({'codigo_usuario': codigoUsuario})
+        const user = await Usuario.find(codigoUsuario)
         return user
     }
-
-    // public async getBuscarId({request}: HttpContextContract) {
-    //     const codigoUsuario = request.param('id')
-    //     const user = await Usuario.find(codigoUsuario)
-    //     return user
-    // }
 
     //MOSTRAR TODOS LOS USUARIOS CON PERFIL
     public async getListarUsuariosYPerfil(): Promise<Usuario[]> {
@@ -105,8 +98,6 @@ export default class UsuariosController {
         const users = await Usuario.query().where('nombre_usuario','like',`${search}%`)
         return(users);
     }
-
-    
 
 
 }

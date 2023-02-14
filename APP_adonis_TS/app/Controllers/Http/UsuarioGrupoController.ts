@@ -52,23 +52,6 @@ export default class UsuarioGrupoController {
     }
 
 
-    // public async putActualizarGrupoUsuario({request}:  HttpContextContract) {
-    //     try {
-    //         const idUser = await request.param('idUser')
-    //         const idGroup = await request.param('idGroup')
-    //         // const existGroup 
-    //         const user = await UsuarioGrupo.findOrFail(idUser)
-    //         const group = await UsuarioGrupo.findOrFail(idGroup)
-    //         const data = await request.all()
-    //         userGroup.fecha_inicio = data.fecha_inicio
-    //         userGroup.save()
-    //         return {'mensaje': 'Se actualizó el grupo', 'estado': 200}
-    
-    //     } catch (error) {
-            
-    //     }
-        
-    // }
 
 
 }
