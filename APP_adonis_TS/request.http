@@ -1,0 +1,10 @@
+POST http://localhost:3333/alcaldia/registro-usuarios
+
+Content-Type: aplication/ json
+
+"codigo_usuario": 10010,
+"nombre_usuario": "usuario prueba",
+"contrasena": "miperro1234",
+"email": "jorgenitales@gmail.com"
+"telefono": "1234566"
+
