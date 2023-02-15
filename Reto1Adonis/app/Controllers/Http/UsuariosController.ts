@@ -19,7 +19,6 @@ export default class UsuariosController {
                 response.status(400).json({'msg':'Error, codigo de usuario ya fue registrado'})
             }
         } catch (error) {
-            console.log(error)
             response.status(500).json({'msg': 'Error en el servidor !!'})
         }
     }

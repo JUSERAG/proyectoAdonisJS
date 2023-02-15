@@ -17,7 +17,6 @@ export default class GruposController {
             }
             
         } catch (error) {
-            console.log(error)
             response.status(500).json({'msg':'Error en el servidor!!'})
         }
     }

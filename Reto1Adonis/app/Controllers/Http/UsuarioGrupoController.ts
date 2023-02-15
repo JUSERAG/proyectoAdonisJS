@@ -29,7 +29,6 @@ export default class UsuarioGrupoController {
             
             }
         } catch (error) {
-            console.log(error)
             response.status(500).json({'msg':'Error en el servidor !!'})
         }
     }
