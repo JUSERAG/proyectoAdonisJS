@@ -11,7 +11,6 @@ export default class UsuariosController {
 
         try {
             const codigoUsuario = dataUsuario.codigo_usuario
-            console.log(codigoUsuario)
             const usuarioExistente: Number = await this.getValidarUsuarioExistente(codigoUsuario)
             if (usuarioExistente === 0){
                 await Usuario.create(dataUsuario)
